@@ -1,0 +1,12 @@
+
+
+{
+    "cucumber-quick": {
+    "tool": "cucumberjs",
+    "script": "npx cucumber-js Features/*.feature"
+  },
+    "cucumberautocomplete.steps":
+        "step_definitions/*.js",
+    "cucumberautocomplete.syncfeatures": "Features/*.feature",
+    "cucumberautocomplete.strictGherkinCompletion": false
+}

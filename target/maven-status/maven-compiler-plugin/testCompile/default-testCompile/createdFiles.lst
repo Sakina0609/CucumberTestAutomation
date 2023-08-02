@@ -1,0 +1,4 @@
+ApplicationHooks/AppHooks.class
+StepDefinition/ContactsStepDef.class
+StepDefinition/LoginStepDef.class
+Runner/TestRunner.class
