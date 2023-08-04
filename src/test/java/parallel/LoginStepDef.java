@@ -1,4 +1,4 @@
-package StepDefinition;
+package parallel;
 
 import com.factory.DriverFactory;
 import io.cucumber.java.en.*;

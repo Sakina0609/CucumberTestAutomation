@@ -49,6 +49,7 @@
     <artifactId>cucumber-junit</artifactId>
     <version>7.12.0</version>
 </dependency>
+
       <dependency>
           <groupId>io.cucumber</groupId>
           <artifactId>cucumber-core</artifactId>
@@ -118,27 +119,30 @@
             <configuration>
                 <parallel>methods</parallel>
                 <useUnlimitedThreads>true</useUnlimitedThreads>
+                <includes>
+                    <include>**/ParallelRun.java</include>
+                </includes>
             </configuration>
         </plugin>
-          <plugin>
-              <artifactId>maven-failsafe-plugin</artifactId>
-              <version>3.1.2</version>
-              <executions>
-                  <execution>
-                      <goals>
-                          <goal>integration-test</goal>
-                      </goals>
-                      <configuration>
-                          <includes>
-                              <include>**/TestRunner.java</include>
-                          </includes>
-                              <parallel>methods</parallel>
-                              <threadcount>4</threadcount>
-                              <perCoreThreadCount>true</perCoreThreadCount>
-                      </configuration>
-                  </execution>
-              </executions>
-          </plugin>
+<!--          <plugin>-->
+<!--              <artifactId>maven-failsafe-plugin</artifactId>-->
+<!--              <version>3.1.2</version>-->
+<!--              <executions>-->
+<!--                  <execution>-->
+<!--                      <goals>-->
+<!--                          <goal>integration-test</goal>-->
+<!--                      </goals>-->
+<!--                      <configuration>-->
+<!--                          <includes>-->
+<!--                              <include>**/TestRunner.java</include>-->
+<!--                          </includes>-->
+<!--                              <parallel>methods</parallel>-->
+<!--                              <threadcount>4</threadcount>-->
+<!--                              <perCoreThreadCount>true</perCoreThreadCount>-->
+<!--                      </configuration>-->
+<!--                  </execution>-->
+<!--              </executions>-->
+<!--          </plugin>-->
         <plugin>
           <artifactId>maven-jar-plugin</artifactId>
           <version>3.0.2</version>

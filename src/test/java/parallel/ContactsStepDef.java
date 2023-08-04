@@ -1,4 +1,4 @@
-package StepDefinition;
+package parallel;
 
 import com.factory.DriverFactory;
 import com.qa.pages.ContactPage;

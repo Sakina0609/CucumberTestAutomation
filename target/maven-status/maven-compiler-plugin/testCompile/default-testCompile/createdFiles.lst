@@ -1,4 +1,5 @@
-ApplicationHooks/AppHooks.class
-StepDefinition/ContactsStepDef.class
-StepDefinition/LoginStepDef.class
+parallel/AppHooks.class
+parallel/ParallelRun.class
+parallel/LoginStepDef.class
 Runner/TestRunner.class
+parallel/ContactsStepDef.class
